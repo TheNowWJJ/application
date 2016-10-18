@@ -1,4 +1,4 @@
-package com.hospital.logic.service.mtr.impl.mtr;
+package com.hospital.logic.service.impl.mtr;
 
 import com.hospital.db.persistence.entity.User;
 import com.hospital.db.persistence.mapper.UserMapper;
