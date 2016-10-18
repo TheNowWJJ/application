@@ -5,26 +5,18 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.hospital</groupId>
-  <artifactId>hospital</artifactId>
+  <artifactId>db</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <packaging>pom</packaging>
+  <packaging>jar</packaging>
 
-  <name>hospital</name>
-  <description>maven 父级</description>
+  <name>db</name>
+  <description>医院综合业务管理系统</description>
 
   <parent>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-parent</artifactId>
-    <version>1.4.1.RELEASE</version>
-    <relativePath/> <!-- lookup parent from repository -->
+    <groupId>com.hospital</groupId>
+    <artifactId>hospital</artifactId>
+    <version>1.0-SNAPSHOT</version>
   </parent>
-
-  <modules>
-    <module>common</module>
-    <module>db</module>
-    <module>logic</module>
-    <module>webapp</module>
-  </modules>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -33,20 +25,31 @@
   </properties>
 
   <dependencies>
+    <!-- mysql -->
     <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-devtools</artifactId>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+
+    <!-- mybatis-spring boot -->
+    <dependency>
+      <groupId>org.mybatis.spring.boot</groupId>
+      <artifactId>mybatis-spring-boot-starter</artifactId>
+      <version>1.1.1</version>
+    </dependency>
+
+    <!-- druid 数据库连接池-->
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>druid</artifactId>
+      <version>1.0.15</version>
     </dependency>
 
     <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-test</artifactId>
-      <scope>test</scope>
-    </dependency>
-
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-configuration-processor</artifactId>
+      <groupId>com.hospital</groupId>
+      <artifactId>common</artifactId>
+      <version>1.0-SNAPSHOT</version>
     </dependency>
   </dependencies>
 
