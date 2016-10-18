@@ -19,9 +19,8 @@
   </parent>
 
   <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <java.version>1.8</java.version>
+    <druid.version>1.0.15</druid.version>
+    <mybatis-spring-boot.version>1.1.1</mybatis-spring-boot.version>
   </properties>
 
   <dependencies>
@@ -47,35 +46,41 @@
     <dependency>
       <groupId>com.alibaba</groupId>
       <artifactId>druid</artifactId>
-      <version>1.0.15</version>
+      <version>${druid.version}</version>
     </dependency>
+
     <!-- mybatis-spring boot -->
     <dependency>
       <groupId>org.mybatis.spring.boot</groupId>
       <artifactId>mybatis-spring-boot-starter</artifactId>
-      <version>1.1.1</version>
+      <version>${mybatis-spring-boot.version}</version>
     </dependency>
+
     <!-- mysql -->
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
       <scope>runtime</scope>
     </dependency>
+
     <dependency>
       <groupId>com.hospital</groupId>
       <artifactId>common</artifactId>
       <version>1.0-SNAPSHOT</version>
     </dependency>
+
     <dependency>
       <groupId>com.hospital</groupId>
       <artifactId>db</artifactId>
       <version>1.0-SNAPSHOT</version>
     </dependency>
+
     <dependency>
       <groupId>com.hospital</groupId>
       <artifactId>logic</artifactId>
       <version>1.0-SNAPSHOT</version>
     </dependency>
+
   </dependencies>
 
   <build>
@@ -86,6 +91,5 @@
       </plugin>
     </plugins>
   </build>
-
 
 </project>
