@@ -1,4 +1,4 @@
-package com.hospital.common.contant_bizdetail;
+package com.hospital.common.contant.bizdetail;
 
 /**
  * Created by wangjj on 16-10-18.
