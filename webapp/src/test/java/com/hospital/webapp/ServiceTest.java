@@ -1,7 +1,7 @@
 package com.hospital.webapp;
 
 import com.hospital.db.persistence.entity.User;
-import com.hospital.logic.service.mtr.impl.mtr.UserService;
+import com.hospital.logic.service.impl.mtr.UserService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
