@@ -1,1 +1,6 @@
-Hello World! Hello zhangchangwei.!
+<script src="js/jquery-1.12.4.js"></script>
+<script>
+  $(document).ready(function () {
+    console.log(1234)
+  });
+</script>

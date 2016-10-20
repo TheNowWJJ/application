@@ -4,37 +4,30 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.hospital</groupId>
   <artifactId>logic</artifactId>
-  <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>logic</name>
   <description>logic</description>
 
   <parent>
-    <groupId>com.hospital</groupId>
-    <artifactId>hospital</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <groupId>cn.veryjava</groupId>
+    <artifactId>application</artifactId>
+    <version>${application.version}</version>
   </parent>
-
-  <properties>
-    <commons-lang3.version>3.3.2</commons-lang3.version>
-    <common-io.version>2.3</common-io.version>
-  </properties>
 
   <dependencies>
 
     <dependency>
-      <groupId>com.hospital</groupId>
+      <groupId>cn.veryjava</groupId>
       <artifactId>common</artifactId>
-      <version>1.0-SNAPSHOT</version>
+      <version>${application.version}</version>
     </dependency>
 
     <dependency>
-      <groupId>com.hospital</groupId>
+      <groupId>cn.veryjava</groupId>
       <artifactId>db</artifactId>
-      <version>1.0-SNAPSHOT</version>
+      <version>${application.version}</version>
     </dependency>
 
   </dependencies>

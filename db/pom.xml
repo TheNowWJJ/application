@@ -4,47 +4,31 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.hospital</groupId>
   <artifactId>db</artifactId>
-  <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>db</name>
-  <description>医院综合业务管理系统</description>
+  <description>db</description>
 
   <parent>
-    <groupId>com.hospital</groupId>
-    <artifactId>hospital</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <groupId>cn.veryjava</groupId>
+    <artifactId>application</artifactId>
+    <version>${application.version}</version>
   </parent>
 
   <dependencies>
-
-    <!-- mysql -->
-    <dependency>
-      <groupId>mysql</groupId>
-      <artifactId>mysql-connector-java</artifactId>
-      <scope>runtime</scope>
-    </dependency>
 
     <!-- mybatis-spring boot -->
     <dependency>
       <groupId>org.mybatis.spring.boot</groupId>
       <artifactId>mybatis-spring-boot-starter</artifactId>
-      <version>1.1.1</version>
-    </dependency>
-
-    <!-- druid 数据库连接池-->
-    <dependency>
-      <groupId>com.alibaba</groupId>
-      <artifactId>druid</artifactId>
-      <version>1.0.15</version>
+      <version>${mybatis-spring-boot-starter.version}</version>
     </dependency>
 
     <dependency>
-      <groupId>com.hospital</groupId>
+      <groupId>cn.veryjava</groupId>
       <artifactId>common</artifactId>
-      <version>1.0-SNAPSHOT</version>
+      <version>${application.version}</version>
     </dependency>
 
   </dependencies>
