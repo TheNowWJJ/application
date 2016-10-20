@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.hospital.db.persistence.mapper.UserMapper">
+<mapper namespace="cn.veryjava.db.persistence.mapper.UserMapper">
   <!--根据id查询用户详情-->
-  <select id="findById" parameterType="int" resultType="com.hospital.db.persistence.entity.User">
+  <select id="findById" parameterType="int" resultType="cn.veryjava.db.persistence.entity.User">
     SELECT * FROM user WHERE id=#{id}
   </select>
 </mapper>
